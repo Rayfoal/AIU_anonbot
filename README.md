@@ -11,3 +11,5 @@ Telegram-бот для сбора отзывов пользователей.
 ## Installation
 ```bash
 pip install -r requirements.txt
+
+[Документация](https://www.notion.so/YourNotionPage)
