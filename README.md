@@ -2,6 +2,9 @@
 
 Telegram-бот для сбора отзывов пользователей.
 
+[Документация](https://www.notion.so/YourNotionPage)
+
+
 ## Features
 - Выбор категории
 - Сбор отзывов
@@ -12,4 +15,3 @@ Telegram-бот для сбора отзывов пользователей.
 ```bash
 pip install -r requirements.txt
 
-[Документация](https://www.notion.so/YourNotionPage)
