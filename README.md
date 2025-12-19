@@ -1,88 +1,74 @@
 # Telegram Feedback Bot
 
-**Telegram бот**, который собирает отзывы пользователей, сохраняет их в Excel и уведомляет администратора.
+**Telegram bot** that collects user feedback, saves it in Excel, and notifies the administrator.
 
 ---
 
-## 📌 Функционал
-- Команды для пользователя:
-  - `/start` — приветствие и запуск бота
-  - `/feedback` — начать процесс отправки отзыва
-  - `/cancel` — отменить отправку отзыва
-- Выбор категории через кнопки:
-  - Преподаватели
-  - Предметы
-  - Расписание
-  - Инфраструктура
-  - Другое
-- Отправка уведомления админу с:
-  - Временем
-  - Категорией
-  - Текстом отзыва
-- Сохранение всех отзывов в Excel (`feedbacks.xlsx`)  
+## 📌 Features
+- User commands:
+  - `/start` — greeting and bot initialization
+  - `/feedback` — start submitting feedback
+  - `/cancel` — cancel feedback submission
+- Category selection via buttons:
+  - Teachers
+  - Subjects
+  - Schedule
+  - Infrastructure
+  - Other
+- Admin notifications with:
+  - Timestamp
+  - Category
+  - Feedback text
+- Save all feedback to Excel (`feedbacks.xlsx`)  
 
 ---
 
-## ⚙️ Установка и запуск
-
-1. **Клонируйте репозиторий:**
-```bash
-git clone https://github.com/ВАШ_ЮЗЕРНЕЙМ/telegram-feedback-bot.git
+## ⚙️ Installation & Running
+# 1. Clone the repository
+git clone https://github.com/YOUR_USERNAME/telegram-feedback-bot.git
 cd telegram-feedback-bot
-```
 
-2. **Создайте виртуальное окружение и установите зависимости:**
-```bash
+# 2. Create a virtual environment and install dependencies
 python -m venv venv
 # Linux/Mac
 source venv/bin/activate
 # Windows
 venv\Scripts\activate
 pip install -r requirements.txt
-```
 
-3. **Создайте .env файл с настройками:**
-```bash
-API_TOKEN=ваш_токен_бота
-ADMIN_CHAT_ID=ваш_chat_id
-```
+# 3. Create a .env file with your settings
+API_TOKEN=your_bot_token
+ADMIN_CHAT_ID=your_chat_id
 
-4. **Структура проекта**
-```bash
+# 4. Project structure
 telegram-feedback-bot/
 │
-├─ bot.py               # Основной код бота
-├─ requirements.txt     # Зависимости Python
-├─ README.md            # Этот файл
-└─ .gitignore           # Игнорируемые файлы, например .env
-```
+├─ bot.py               # Main bot code
+├─ requirements.txt     # Python dependencies
+├─ README.md            # This file
+└─ .gitignore           # Ignored files, e.g., .env
 
-## 📦 Зависимости
+---
 
-Python 3.11+
+## 📦 Dependencies
+Python 3.11+  
+aiogram — Telegram bot library  
+openpyxl — Excel handling library  
 
-aiogram
- — библиотека для Telegram бота
+---
 
-openpyxl
- — работа с Excel
+## 💡 Notes
+- The `.env` file is not uploaded to GitHub (keeps bot token and admin ID secure).  
+- If `feedbacks.xlsx` is missing — it is created automatically on first run.  
+- The bot requires internet access and works via the Telegram API.  
 
-## 💡 Примечания
+---
 
-.env файл не загружается в GitHub (безопасно хранить токен и ID администратора).
+## 🔒 Security
+- Bot token and admin ID are stored in `.env`.  
+- Excel file is stored locally only.  
 
-Если feedbacks.xlsx отсутствует — создаётся автоматически при первом запуске.
+---
 
-Бот работает только с интернетом и Telegram API.
-
-## 🔒 Безопасность
-
-Токен бота и ID администратора хранятся в .env.
-
-Excel файл доступен только локально.
-
-## Документация
-
-Полная документация и описание проекта доступны в [Notion](https://www.notion.so/Software-Requirements-Specification-SRS-2ce45bace9eb805ebbaad60dc79b73a3?source=copy_link)
-
-.
+## Documentation
+Full documentation and project description are available on [Notion](https://www.notion.so/Software-Requirements-Specification-SRS-2ce45bace9eb805ebbaad60dc79b73a3?source=copy_link)
