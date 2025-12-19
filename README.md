@@ -24,30 +24,42 @@
 ---
 
 ## ⚙️ Installation & Running
-** 1. Clone the repository **
+1. Clone the repository 
+```
 git clone https://github.com/YOUR_USERNAME/telegram-feedback-bot.git
 cd telegram-feedback-bot
+```
 
-** 2. Create a virtual environment and install dependencies **
+2. Create a virtual environment and install dependencies 
+```
 python -m venv venv
-** Linux/Mac **
+```
+
+Linux/Mac
+```
 source venv/bin/activate
-** Windows **
+```
+Windows
+```
 venv\Scripts\activate
 pip install -r requirements.txt
+```
 
-** 3. Create a .env file with your settings **
+3. Create a .env file with your settings
+```
 API_TOKEN=your_bot_token
 ADMIN_CHAT_ID=your_chat_id
+```
 
 ** 4. Project structure **
+```
 telegram-feedback-bot/
 │
 ├─ bot.py               # Main bot code
 ├─ requirements.txt     # Python dependencies
 ├─ README.md            # This file
 └─ .gitignore           # Ignored files, e.g., .env
-
+```
 ---
 
 ## 📦 Dependencies
