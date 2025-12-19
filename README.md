@@ -80,3 +80,9 @@ openpyxl
 Токен бота и ID администратора хранятся в .env.
 
 Excel файл доступен только локально.
+
+## Документация
+
+Полная документация и описание проекта доступны в [Notion](https://www.notion.so/Software-Requirements-Specification-SRS-2ce45bace9eb805ebbaad60dc79b73a3?source=copy_link)
+
+.
