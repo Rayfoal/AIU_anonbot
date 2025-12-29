@@ -84,3 +84,5 @@ openpyxl — Excel handling library
 
 ## Documentation
 Full documentation and project description are available on [Notion](https://www.notion.so/Software-Requirements-Specification-SRS-2ce45bace9eb805ebbaad60dc79b73a3?source=copy_link)
+
+Video example: https://drive.google.com/file/d/1Juc5XKqmcewF_9nYcHhroqv3BOpAzLS9/view?usp=sharing
